@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusaf Pulakkal | ward-8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            padding: 20px;
+
+        }
+
+        .parent {
+            background-color: #dddddd;
+            width: 100%;
+            max-width: 700px;
+            min-height: 70vh;
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
+                2px 2px 7px rgba(70, 70, 70, 0.12);
+
+
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 13px;
+
+        }
+
+        .led {
+            background-color: green;
+
+        }
+
+
+        button {
+            width: 50px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: #03254c;
+            border: none;
+            outline: none;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            color: #000;
+            margin-top: 15px;
+            font-family: serif;
+            letter-spacing: .4px;
+
+        }
+
+        p {
+            display: block;
+            padding: 5px 0;
+        }
+
+        /* .rose{
+        background-color: #79afe0;
+    } */
+
+        .link {
+            text-decoration: none;
+            color: #00000055;
+            margin: 20px 0 10px 0;
+        }
+
+        .disabled-switch {
+            background-color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="wrapper">
+            <p>
+            <p>
+            <p style="font-weight: 700;font-size: 20px;">ELECTION-2025</p>
+            <p style="font-weight: 700;font-size: 16px; margin-bottom: 10px;">WARD-14</p>
+            <table>
+                <th>
+                <td>പേര്</td>
+                <td>ചിഹ്നം</td>
+                <td></td>
+                </th>
+
+                <tr>
+                    <td class="rose">2</td>
+                    <td class="rose" style="font-weight: 500; color: rgba(0, 0, 0, 0.851);">
+      
+                    </td>
+                    <td class="rose"></td>
+                    <td class="led-class"><button class="btn disabled-switch"></button></td>
+                </tr>
+                <tr>
+                    <td class="rose">2</td>
+                    <td class="rose" style="font-weight: 500;color: rgba(0, 0, 0, 0.851);">
+       
+                    </td>
+                    <td class="rose"></td>
+                    <td class="led-class"><button class="btn disabled-switch"></button></td>
+                </tr>
+                                <tr>
+                    <td class="rose">3</td>
+                    <td class="rose" style="font-weight: 800;">
+                        യൂസഫ് പുലാക്കൽ
+                    </td>
+                    <td class="rose"><img src="./umberla.png" alt="" width="40px" height="40px"></td>
+                    <td class="led-class"><button onclick="sound()" class="button"></button></td>
+                </tr>
+                <tr>
+                    <td class="rose">4</td>
+                    <td class="rose" style="font-weight: 500;color: rgba(0, 0, 0, 0.851);">
+              
+                    </td>
+                    <td class="rose"></td>
+                    <td class="led-class"><button class="btn disabled-switch"></button></td>
+                </tr>
+
+                <tr>
+                    <td class="rose">6</td>
+
+                    </td>
+                    <td class="rose"></td>
+                    <td class="led-class"><button class="btn disabled-switch"></button></td>
+                </tr>
+                <tr>
+                    <td class="rose">7</td>
+                    <td class="rose"></td>
+                    <td class="rose"></td>
+                    <td><button class="btn disabled-switch"></button></td>
+                </tr>
+                <tr>
+                    <td class="rose">8</td>
+                    <td class="rose"></td>
+                    <td class="rose"></td>
+                    <td><button class="btn disabled-switch"></button></td>
+                </tr>
+                <tr>
+                    <td class="rose">9</td>
+                    <td class="rose"></td>
+                    <td class="rose"></td>
+                    <td><button class="btn disabled-switch"></button></td>
+                </tr>
+
+            </table>
+            <a class="link" href="tel:+919562348936">Developed by: Anas VP</a>
+        </div>
+    </div>
+    <script>
+        function sound() {
+            var btn = document.querySelector(".button")
+            var beep = new Audio('./Censorship Beep v3 Long.wav');
+            btn.style.backgroundColor = "red"
+            btn.style.boxShadow = "2px 2px 15px red"
+            setTimeout(() => {
+                setTimeout(() => {
+                    btn.style.backgroundColor = "#03254c"
+                    btn.style.boxShadow = "none"
+                }, 1100)
+            }, 100)
+            beep.play();
+        }
+    </script>
+</body>
+
+</html>
