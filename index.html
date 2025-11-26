@@ -193,13 +193,12 @@
             var beep = new Audio('./Censorship Beep v3 Long.wav');
             btn.style.backgroundColor = "red"
             btn.style.boxShadow = "2px 2px 15px red"
-            setTimeout(() => {
+            beep.play();
                 setTimeout(() => {
                     btn.style.backgroundColor = "#03254c"
                     btn.style.boxShadow = "none"
                 }, 1100)
-            }, 100)
-            beep.play();
+
         }
     </script>
 </body>
